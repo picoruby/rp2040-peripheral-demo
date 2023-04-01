@@ -1,3 +1,6 @@
 [submodule "lib/picoruby"]
 	path = lib/picoruby
 	url = https://github.com/picoruby/picoruby
+[submodule "rp2040-peripheral-demo"]
+	path = rp2040-peripheral-demo
+	url = https://github.com/picoruby/rp2040-peripheral-demo

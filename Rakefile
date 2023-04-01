@@ -1,6 +1,6 @@
 require "fileutils"
 
-MRUBY_CONFIG = "r2p2-cortex-m0plus"
+MRUBY_CONFIG = File.expand_path "../mruby_config.rb", __FILE__
 PICO_SDK_TAG = "1.5.0"
 
 task :default => :all

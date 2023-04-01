@@ -13,7 +13,7 @@ uart.write "Input time in `yyyy mm dd hh mm ss` of blank if you don't update\r\n
 uart.write "> "
 input = ""
 while (c = uart.read(1))
-  uart.write c
+  uart.write c # echo back
   input << c
   next if c != "\n"
   input.chomp!
@@ -35,7 +35,7 @@ while (c = uart.read(1))
   end
 end
 
-while
+while true
   sleep 1
   led.write 1
   uart.write "Current time: #{rtc.current_time}\r\n"
