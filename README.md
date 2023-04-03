@@ -9,16 +9,6 @@
 - Raspberry Pi Pico
   - Other RP2040 boards should work making sure to connect appropriate pins
 
-## Build
-
-`git clone` this repo and `cd` into it.
-
-Then,
-
-```console
-rake
-```
-
 ## Peripherals
 
 - PCF8523 RTC module
@@ -38,8 +28,36 @@ rake
 |GND|PCF8523 GND|
 |VBUS(5V)[^2]|PCF8523 VCC|
 
-[^1]: Optional. Connect if you want to supply bus power from the host PC
+[^1]: Optional. Connect if you want to supply bus power from the cable
 
 [^2]: 3V3 also should work though, 5V would be better for the reliability of switching over from battery
 
+
+## Build
+
+`git clone` this repo and `cd` into it.
+
+Then,
+
+```console
+rake
+```
+
+## Install and run
+
+- Install `build/PicoRuby-RP2040-Peripheral-Demo.uf2` into RP2040
+- Connect the USB serial cable to the host PC
+- Open a serial terminal with values below:
+    |entry|value|
+    |----|----|
+    |Baudrate|115200|
+    |Data bits|8|
+    |Stop bits|1|
+    |Parity|none|
+    |Flow control|none|
+- Start RP2040 by connecting a power of pushing the reset button
+
+## Usage
+
+You can find in `mrblib/app.rb`
 

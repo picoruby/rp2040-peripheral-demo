@@ -47,7 +47,7 @@ add_custom_target(mrbdir ALL
   COMMAND ${CMAKE_COMMAND} -E make_directory ${CMAKE_SOURCE_DIR}/build/mrb
 )
 
-set(RUBY_FILES main)
+set(RUBY_FILES app)
 
 add_dependencies(${PROJECT_NAME}
   mrbdir

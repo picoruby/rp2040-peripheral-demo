@@ -5,9 +5,10 @@
 #include <hardware/clocks.h>
 
 /* PicoRuby */
-//#include <picorbc.h>
 #include <hal.h>
 #include <picogem_init.c>
+
+#include "../build/mrb/app.c"
 
 #ifndef HEAP_SIZE
 #define HEAP_SIZE (1024 * 220 - 1)
@@ -30,7 +31,7 @@ main(void)
 
   mrbc_init(heap_pool, HEAP_SIZE);
   picoruby_init_require();
-  mrbc_create_task(main, 0);
+  mrbc_create_task(app, 0);
   mrbc_run();
   return 0;
 }
