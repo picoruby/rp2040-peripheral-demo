@@ -59,5 +59,6 @@ rake
 
 ## Usage
 
-You can find in `mrblib/app.rb`
+You can figure it out in `mrblib/app.rb`
 
+https://user-images.githubusercontent.com/8454208/229503048-495847fb-8f55-48de-8517-5a005ec301a6.mp4
