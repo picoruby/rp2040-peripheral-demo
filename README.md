@@ -1,14 +1,5 @@
 # PicoRuby RP2040 Peripheral Demo
 
-## Prerequisites
-
-- CMake
-- [raspberrypi/pico-sdk](https://github.com/raspberrypi/pico-sdk)
-  - tag 1.5.0
-  - PICO_SDK_PATH
-- Raspberry Pi Pico
-  - Other RP2040 boards should work making sure to connect appropriate pins
-
 ## Peripherals
 
 - GPIO: RP2040 on-board LED
@@ -35,20 +26,30 @@
 
 [^2]: 3V3 also should work though, 5V would be better for the reliability of switching over from battery
 
+## Build by yourself or use a release binary
 
-## Build
+### Prerequisites
+
+- CMake
+- [raspberrypi/pico-sdk](https://github.com/raspberrypi/pico-sdk)
+  - tag 1.5.0
+  - PICO_SDK_PATH
+- Raspberry Pi Pico
+  - Other RP2040 boards should work making sure to connect appropriate pins
+
+### Build
 
 `git clone` this repo and `cd` into it.
-
-Then,
 
 ```console
 rake
 ```
 
+Then you'll get `build/PicoRuby-RP2040-Peripheral-Demo.uf2`.
+
 ## Install and run
 
-- Install `build/PicoRuby-RP2040-Peripheral-Demo.uf2` into RP2040
+- Install `PicoRuby-RP2040-Peripheral-Demo.uf2` into RP2040
 - Connect the USB serial cable to the host PC
 - Open a serial terminal with values below:
     |entry|value|
