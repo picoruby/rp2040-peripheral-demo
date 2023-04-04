@@ -19,6 +19,7 @@
 
 |Function|Raspi Pico|Peripheral|
 |----|---------------|----------|
+|GPIO|GPIO 25 (Connected internally)|LED|
 |UART|GPIO 0|Serial Adapter RX (Yellow)|
 |UART|GPIO 1|Serial Adapter TX (Orange)|
 |UART|GND|Serial Adapter GND (Black)|
@@ -27,7 +28,7 @@
 |I2C|GPIO 5|PCF8523 SCL|
 |I2C|GND|PCF8523 GND|
 |I2C|VBUS(5V)[^2]|PCF8523 VCC|
-|ADC|(Connected internally)|Temperature sensor|
+|ADC|ADC4 (Connected internally)|Temperature sensor|
 
 [^1]: Optional. Connect if you want to supply bus power from the cable
 
