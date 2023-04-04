@@ -11,22 +11,23 @@
 
 ## Peripherals
 
-- PCF8523 RTC module
-
-- FTDI USB to TTL Serial Adapter Cable (3.3V)
+- UART: FTDI USB to TTL Serial Adapter Cable (3.3V)
+- I2C: PCF8523 RTC module
+- ADC: RP2040 on-board temperature sensor
 
 ## Wiring
 
-|Raspi Pico|Peripheral|
-|---------------|----------|
-|GPIO 0|Serial Adapter RX (Yellow)|
-|GPIO 1|Serial Adapter TX (Orange)|
-|GND|Serial Adapter GND (Black)|
-|VBUS(5V)|Serial Adapter VCC (Red)[^1]|
-|GPIO 4|PCF8523 SDA|
-|GPIO 5|PCF8523 SCL|
-|GND|PCF8523 GND|
-|VBUS(5V)[^2]|PCF8523 VCC|
+|Function|Raspi Pico|Peripheral|
+|----|---------------|----------|
+|UART|GPIO 0|Serial Adapter RX (Yellow)|
+|UART|GPIO 1|Serial Adapter TX (Orange)|
+|UART|GND|Serial Adapter GND (Black)|
+||VBUS(5V)|Serial Adapter VCC (Red)[^1]|
+|I2C|GPIO 4|PCF8523 SDA|
+|I2C|GPIO 5|PCF8523 SCL|
+|I2C|GND|PCF8523 GND|
+|I2C|VBUS(5V)[^2]|PCF8523 VCC|
+|ADC|(Connected internally)|Temperature sensor|
 
 [^1]: Optional. Connect if you want to supply bus power from the cable
 
@@ -61,4 +62,4 @@ rake
 
 You can figure it out in `mrblib/app.rb`
 
-https://user-images.githubusercontent.com/8454208/229503048-495847fb-8f55-48de-8517-5a005ec301a6.mp4
+https://user-images.githubusercontent.com/8454208/229699464-78763c11-6912-41be-8f44-7c897a67a8be.mp4
