@@ -58,7 +58,7 @@ rake
     |Stop bits|1|
     |Parity|none|
     |Flow control|none|
-- Start RP2040 by connecting a power of pushing the reset button
+- Start RP2040 by connecting a power or pushing the reset button
 
 ## Usage
 
