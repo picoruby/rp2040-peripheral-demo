@@ -61,5 +61,3 @@ while true
   sleep 1
   led.write 0
 end
-
- 27 - (ADC_Voltage - 0.706)/0.001721
