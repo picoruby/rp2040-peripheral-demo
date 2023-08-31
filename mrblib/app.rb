@@ -51,13 +51,11 @@ end
 
 uart.write "\r\nStarting loop\r\n\r\n"
 
-ADC_CONVERSION_FACTOR = 3.3 / (1<<12)
-
 while true
   sleep 1
   led.write 1
   uart.write "Current time: #{rtc.current_time}\r\n"
-  uart.write "Temperature: #{27 - (adc.read * ADC_CONVERSION_FACTOR - 0.706) / 0.001721} C\r\n"
+  uart.write "Temperature: #{27 - (adc.read_voltage - 0.706) / 0.001721} C\r\n"
   sleep 1
   led.write 0
 end
