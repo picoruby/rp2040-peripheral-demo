@@ -9,6 +9,10 @@
 
 ## Wiring
 
+![](images/rp2040-peripheral-demo_bb.png)
+
+Note: The wire colors in the picture and in the table are different.
+
 |Function|Raspi Pico|Peripheral|
 |----|---------------|----------|
 |GPIO|GPIO 25 (Connected internally)|LED|
