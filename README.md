@@ -2,10 +2,10 @@
 
 ## Peripherals
 
-- GPIO: RP2040 on-board LED
+- GPIO: Raspberr Pi Pico on-board LED
 - UART: FTDI USB to TTL Serial Adapter Cable (3.3V)
 - I2C: PCF8523 RTC module
-- ADC: RP2040 on-board temperature sensor
+- ADC: RP2040 on-chip temperature sensor
 
 ## Wiring
 
